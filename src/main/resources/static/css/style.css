@@ -1,0 +1,126 @@
+#series_title{
+    color: white;
+    text-align: center;
+}
+
+#navbarColor01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    background-image: url('../images/fondo_sa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 92vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.modal {
+    display: none; /* Por defecto, el modal está oculto */
+    position: fixed; /* Mantener el modal en su posición en la pantalla */
+    z-index: 1000; /* Asegurarse de que el modal esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Permitir el desplazamiento si el contenido es largo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrar el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido del modal */
+    max-width: 500px; /* Máximo ancho del contenido del modal */
+}
+
+.hidden {
+    display: none;
+}
+.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+#content > * {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.btn-secondary{
+    margin: 10px;
+}
+
+#season-image {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px; /* Ancho máximo para centrar el contenido */
+    margin-left: auto; /* Centrado automático */
+    margin-right: auto; /* Centrado automático */
+}
+.character-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.character-card {
+    text-align: center;
+    margin: 10px;
+}
